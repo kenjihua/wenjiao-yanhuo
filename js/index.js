@@ -250,18 +250,18 @@ $(function () {
 
   // 随机播放鞭炮爆炸的声音
   function playExpSound() {
-    // var sound = listExpSound[Math.floor(Math.random() * listExpSound.length)];
-    // sound.volume = Math.random() * 0.4 + 0.1;
-    // sound.play();
+    var sound = listExpSound[Math.floor(Math.random() * listExpSound.length)];
+    sound.volume = Math.random() * 0.4 + 0.1;
+    sound.play();
   }
 
   // 随机播放鞭炮发射的声音
   function playLaunchSound() {
-    // setTimeout(function () {
-    //   var sound = listLaunchSound[Math.floor(Math.random() * listLaunchSound.length)];
-    //   sound.volume = 0.05;
-    //   sound.play();
-    // }, 200);
+    setTimeout(function () {
+      var sound = listLaunchSound[Math.floor(Math.random() * listLaunchSound.length)];
+      sound.volume = 0.05;
+      sound.play();
+    }, 200);
   }
 
   function makeCircleFirework(fire) {
